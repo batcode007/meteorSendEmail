@@ -1,0 +1,21 @@
+<head>
+  <title>simple-todos</title>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+  {{>loginButtons}}
+  {{#if currentUser}}
+    <p>{{>info}}</p>
+    {{>hello}}
+  {{/if}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>Sending email in {{counter}} seconds.</p>
+</template>
+
+<template name="info">
+  <h2>Hello Folks!</h2>
+</template>
